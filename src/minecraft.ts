@@ -1,6 +1,6 @@
 import { connect } from 'cloudflare:sockets';
 import leb from 'leb';
-import { Buffer } from 'buffer';
+import { Buffer } from 'node:buffer';
 
 export type Chat = {
   text: string;

@@ -1,3 +1,4 @@
-name = "minecraft-server-list"
+name = "minecraft-server-ping"
 main = "src/index.ts"
 compatibility_date = "2023-05-21"
+compatibility_flags = ["nodejs_compat"]

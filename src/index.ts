@@ -6,7 +6,7 @@ export interface Env {
   // MY_DURABLE_OBJECT: DurableObjectNamespace;
 }
 
-import { Buffer } from 'buffer';
+import { Buffer } from 'node:buffer';
 import { getServerStatus } from './minecraft';
 
 const jsonResponse = (object: unknown, opts?: ResponseInit) => {
@@ -22,7 +22,7 @@ export default {
     env: Env,
     ctx: ExecutionContext
   ): Promise<Response> {
-    // polyfill for other modules
+    // set for modules we don't control
     (globalThis as any).Buffer = Buffer;
 
     const { searchParams } = new URL(request.url);

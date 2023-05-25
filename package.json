@@ -9,7 +9,6 @@
     "wrangler": "^3.0.0"
   },
   "dependencies": {
-    "buffer": "^6.0.3",
     "leb": "^0.3.0"
   }
 }
